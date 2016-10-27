@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Street View controls</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+function initPano() {
+  // Note: constructed panorama objects have visible: true
+  // set by default.
+  var panorama = new google.maps.StreetViewPanorama(
+      document.getElementById('map'), {
+          position: { lat: 39.906816, lng: 116.3977507 },
+        addressControlOptions: {
+          position: google.maps.ControlPosition.BOTTOM_CENTER
+        },
+        linksControl: false,
+        panControl: false,
+        enableCloseButton: false
+  });
+}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSM5lbyNSbWbNd8ctlhbg3l-TRK75Qgy0&signed_in=true&callback=initPano"
+            async defer>
+    </script>
+</body>
+</html>
