@@ -1,0 +1,6 @@
+C:\workspace\ws1\DataUpdate\bin\Debug\netstandard2.0\DataUpdate.deps.json
+C:\workspace\ws1\DataUpdate\bin\Debug\netstandard2.0\DataUpdate.dll
+C:\workspace\ws1\DataUpdate\obj\Debug\netstandard2.0\DataUpdate.csprojResolveAssemblyReference.cache
+C:\workspace\ws1\DataUpdate\obj\Debug\netstandard2.0\DataUpdate.csproj.CoreCompileInputs.cache
+C:\workspace\ws1\DataUpdate\obj\Debug\netstandard2.0\DataUpdate.AssemblyInfoInputs.cache
+C:\workspace\ws1\DataUpdate\obj\Debug\netstandard2.0\DataUpdate.AssemblyInfo.cs

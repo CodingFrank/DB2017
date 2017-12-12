@@ -10,6 +10,40 @@
     <link href="css/github1.css" rel="stylesheet" type="text/css"/>
     <script src="js/github1.js" type="text/javascript" ></script>    
     <script src="js/gframeworks.js" type="text/javascript" ></script>
+      <script src="https://statics.teams.microsoft.com/sdk/v1.0/js/MicrosoftTeams.min.js"></script>
+	  <script src="js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript">
+          // Initialize the Microsoft Teams Library
+          microsoftTeams.initialize();
+          microsoftTeams.settings.setValidityState(true);
+          microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
+              microsoftTeams.getContext(function (context) {
+                  color = $('#color').val();
+                  name = $('#name').val();
+                  numdays = $('#numdays').val();
+
+                  url = `${host}/tabs/index?teamId=` +
+                      `${encodeURIComponent(context.teamId)}` +
+                      `&channelId=${encodeURIComponent(context.channelId)}` +
+                      `&color=${encodeURIComponent(color)}` +
+                      `&numdays=${numdays}`;
+
+                  url += (auth) ? `&auth=${auth}` : '';
+                  websiteUrl = url + `&web=1`;
+
+                  entity = `todotab-${name}-${context.teamId}-${context.channelId}`;
+
+                  microsoftTeams.settings.setSettings({
+                      entityId: entity,
+                      contentUrl: url,
+                      suggestedDisplayName: name,
+                      websiteUrl: websiteUrl
+                  });
+
+                  saveEvent.notifySuccess();
+              });
+          });
+      </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta name="viewport" content="width=device-width">

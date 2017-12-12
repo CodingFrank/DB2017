@@ -124,7 +124,7 @@
     </svg> 
 </a>
     <ul class="site-footer-links">
-      <li>&copy; 2016 <span >Built for Software Development</span>, ITWS-6700</li>
+      <li>&copy; 2017 <span >Built for Software Development</span>, ITWS-6700</li>
     </ul>
   </div>
 </div>

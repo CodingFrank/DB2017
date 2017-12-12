@@ -1,0 +1,27 @@
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+#profile-right{
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	background-color: royalblue;
+}
+
+#content-left{
+	height: auto;
+	min-height: 100vh;
+	background-color: white;
+	padding: 0;
+}
+
+.col-xs-12, .content-block{
+	border-bottom: 2px solid #ccc;
+	height: 30vh;
+	padding: 15px;
+	margin: 0;
+	width: 100%;
+}

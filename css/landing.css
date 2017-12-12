@@ -1,0 +1,66 @@
+html{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-height: 100%;
+	width: 100%;
+	
+}
+
+.container{
+	height: 100vh;
+	width: 100%;
+}
+.row{
+	min-height: 100vh;
+}
+#middle-column{
+	height: 100vh;
+}
+.col-xs-3{
+	height: 100vh;
+}
+#sign-in{
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#logo{
+	width: 50%;
+	float: left;
+	padding: 8%;
+}
+#title{
+	width: 50%;
+	float: right;
+	padding-top: 4vw;
+	font-size:4vw;
+	
+}
+
+form{
+	width: 100%;
+}
+form input{
+	width: 55%;
+	margin-left: 22.5%;
+}
+
+form input#submit-signin{
+	width: 30%;
+	margin-left: 35%;
+}
+
+input[type=text]{
+	border: 1px solid #ccc;
+	padding: 5px;
+	border-radius: 3px;
+}
+input[type=submit]{
+	border-radius: 3px;
+	background-color: darkorange;
+	color: white;
+	border: none;
+	padding: 5px;
+}
